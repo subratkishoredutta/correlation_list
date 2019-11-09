@@ -14,4 +14,5 @@ def corrlist(limit,source_data):
             if (correlation[cordict[i]][cordict[j]] > n) :
                 if (cordict[i]!=cordict[j]) and ((cordict[j],cordict[i]) in highcorr)==False :
                     highcorr.append((cordict[i],cordict[j]))
+    return(highcorr) 
     print(highcorr)
